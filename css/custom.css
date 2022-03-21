@@ -1,0 +1,41 @@
+/*
+############################################################################
+	Author: Othon Lima
+	Date: March 19, 2022
+	Purpose: CIS-2286 Assignment 4 - Tennis Trivia
+############################################################################
+*/
+
+.container
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+    padding: 5px;
+    margin-top: 10px;
+    width: 800px;
+}
+
+.form-group
+{
+    margin-bottom: 10px;
+}
+
+.btn
+{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.errorStyle
+{
+    padding: 1px;
+    color: red;
+    /* Hides error message and only shows if there is an error*/
+    display: none;
+}
+
+#outputDiv
+{
+    font-size: 25px;
+}

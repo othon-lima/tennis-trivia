@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+############################################################################
+	Author: Othon Lima
+	Date: March 19, 2022
+	Purpose: CIS-2286 Assignment 4 - Tennis Trivia
+	Resources for trivia questions:
+	https://www.triviawell.com/questions/tennis?eb4efcd1_page=1
+	https://www.usefultrivia.com/sports_trivia/tennis_trivia_index.html
+############################################################################
+ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tennis Trivia</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Tennis Trivia</legend>
+            <form>
+                <!--//Trivia question 1-->
+                <div class="form-group">
+                    <label for="question1">1) What is the term for a zero score in tennis?</label>
+                    <input type="text" class="form-control" id="question1">
+                    <span id="question1error" class="errorStyle">Field cannot be left blank!</span>
+                </div>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint1">Hint</button>
+
+                <!--//Trivia question 2-->
+                <div class="form-group">
+                    <label for="question2">2) What country is tennis pro Rafael Nadal from?</label>
+                    <input type="text" class="form-control" id="question2">
+                    <span id="question2error" class="errorStyle">Field cannot be left blank!</span>
+                </div>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint2">Hint</button>
+
+                <!--//Trivia question 3-->
+                <div class="form-group">
+                    <label for="question3">3) Who did John McEnroe defeat in the final to win his first Wimbledon singles title?</label>
+                    <select id="question3" class="form-control">
+                        <option value="">Please select...</option>
+                        <option value="Jimmy Connors">Jimmy Connors</option>
+                        <option value="Bjorn Borg">Bjorn Borg</option>
+                        <option value="Chris Lewis">Chris Lewis</option>
+                        <option value="Kevin Curren">Kevin Curren</option>
+                    </select>
+                    <span id="question3error" class="errorStyle">Field cannot be left blank!</span>
+                </div>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint3">Hint</button>
+
+                <!--//Trivia question 4-->
+                <div class="form-group">
+                    <label for="question4">4) What year was tennis originally introduced as an Olympic sport?</label>
+                    <select id="question4" class="form-control">
+                        <option value="">Please select...</option>
+                        <option value="1896">1896</option>
+                        <option value="1924">1924</option>
+                        <option value="1968">1968</option>
+                        <option value="1988">1988</option>
+                    </select>
+                    <span id="question4error" class="errorStyle">Field cannot be left blank!</span>
+                </div>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint4">Hint</button>
+
+                <!--//Trivia question 5-->
+                <p><b>5) Who defeated tennis player Bobby Riggs in the famous "Battle of the Sexes"?</b></p>
+                <div class="radio">
+                    <label for="question5Option1">
+                        <input type="radio" id="question5Option1" name="question5Options">
+                        Margaret Court
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="question5Option2">
+                        <input type="radio" id="question5Option2" name="question5Options">
+                        Billie Jean King
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="question5Option3">
+                        <input type="radio" id="question5Option3" name="question5Options">
+                        Chris Evert-Lloyd
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="question5Option4">
+                        <input type="radio" id="question5Option4" name="question5Options">
+                        Martina Navratilova
+                    </label>
+                </div>
+                <span id="question5error" class="errorStyle">You must select an option!</span>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint5">Hint</button>
+
+                <!--//Trivia question 6-->
+                <p><b>6) Which is the second Grand Slam tournament of the year? </b></p>
+                <div class="radio">
+                    <label for="question6Option1">
+                        <input type="radio" id="question6Option1" name="question6Options">
+                        Australian Open
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="question6Option2">
+                        <input type="radio" id="question6Option2" name="question6Options">
+                        French Open
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="question6Option3">
+                        <input type="radio" id="question6Option3" name="question6Options">
+                        Wimbledon
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="question6Option4">
+                        <input type="radio" id="question6Option4" name="question6Options">
+                        US Open
+                    </label>
+                </div>
+                <span id="question6error" class="errorStyle">You must select an option!</span>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint6">Hint</button>
+
+                <!--//Trivia question 7-->
+                <p><b>7) Which of these players have won more than 10 Grand Slams? (choose all that apply) </b></p>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="question7Options[]" value="Andre Agassi">
+                        Andre Agassi
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="question7Options[]" value="Boris Becker">
+                        Boris Becker
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="question7Options[]" value="Pete Sampras">
+                        Pete Sampras
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="question7Options[]" value="Roger Federer">
+                        Roger Federer
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="question7Options[]" value="None of the above">
+                        None of the above
+                    </label>
+                </div>
+                <span id="question7error" class="errorStyle">You must select an option!</span>
+                <button type="button" class="btn btn-info btn-sm hint" id="hint7">Hint</button>
+
+                <button type="button" class="btn btn-primary btn-sm" id="submit">Submit!</button>
+            </form>
+        </fieldset>
+
+        <!--Div do display percentage of correct answers-->
+        <div id="outputDiv">
+
+        </div>
+    </div>
+
+    <!-- jQuery file required for bootstrap and JS files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/trivProcess.js"></script>
+</body>
+</html>
